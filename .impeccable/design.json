@@ -1,0 +1,415 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-11T09:33:33.538Z",
+  "title": "Design System: IcthyoScan",
+  "extensions": {
+    "colorMeta": {
+      "ground": {
+        "role": "neutral",
+        "displayName": "Painted White",
+        "canonical": "oklch(98.7% 0.004 106)",
+        "tonalRamp": [
+          "#0B0B0A",
+          "#242423",
+          "#40403E",
+          "#5E5E5B",
+          "#80807E",
+          "#A5A5A3",
+          "#CACAC9",
+          "#EEEEEE"
+        ]
+      },
+      "ground-2": {
+        "role": "neutral",
+        "displayName": "Worn White",
+        "canonical": "oklch(95.4% 0.008 98)",
+        "tonalRamp": [
+          "#0B0B0A",
+          "#252421",
+          "#41403B",
+          "#5F5E59",
+          "#81807B",
+          "#A5A5A1",
+          "#CBCAC8",
+          "#EFEEED"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Sign Ink",
+        "canonical": "oklch(21.7% 0.006 106)",
+        "tonalRamp": [
+          "#0B0B0A",
+          "#242422",
+          "#40403D",
+          "#5E5E5A",
+          "#80807D",
+          "#A5A5A2",
+          "#CACAC9",
+          "#EEEEED"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Faded Ink",
+        "canonical": "oklch(44.2% 0.013 95)",
+        "tonalRamp": [
+          "#0C0B09",
+          "#25241F",
+          "#424038",
+          "#605E55",
+          "#828078",
+          "#A6A59E",
+          "#CBCAC7",
+          "#EFEEEC"
+        ]
+      },
+      "hair": {
+        "role": "neutral",
+        "displayName": "Chalk Hairline",
+        "canonical": "oklch(86.9% 0.014 97)",
+        "tonalRamp": [
+          "#0C0B09",
+          "#25241F",
+          "#414038",
+          "#605E55",
+          "#828077",
+          "#A6A59E",
+          "#CBCAC6",
+          "#EFEEEC"
+        ]
+      },
+      "chrome-yellow": {
+        "role": "primary",
+        "displayName": "Chrome-Yellow Enamel",
+        "canonical": "oklch(83.5% 0.166 89)",
+        "tonalRamp": [
+          "#160800",
+          "#391D00",
+          "#613500",
+          "#835400",
+          "#A87800",
+          "#C3A03F",
+          "#DCC997",
+          "#FAEED0"
+        ]
+      },
+      "leaf-green": {
+        "role": "secondary",
+        "displayName": "Leaf Green",
+        "canonical": "oklch(46.7% 0.114 149)",
+        "tonalRamp": [
+          "#001002",
+          "#002E0C",
+          "#004F1B",
+          "#236F37",
+          "#499359",
+          "#80B388",
+          "#B6D4BA",
+          "#E2F4E4"
+        ]
+      },
+      "tomato": {
+        "role": "tertiary",
+        "displayName": "Market Tomato",
+        "canonical": "oklch(54.1% 0.177 32)",
+        "tonalRamp": [
+          "#210000",
+          "#4F0000",
+          "#830000",
+          "#AB2103",
+          "#D54C33",
+          "#EA8470",
+          "#F7BAAC",
+          "#FFE5DC"
+        ]
+      },
+      "field-white": {
+        "role": "neutral",
+        "displayName": "Field White",
+        "canonical": "oklch(100% 0 0)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#242424",
+          "#404040",
+          "#5E5E5E",
+          "#808080",
+          "#A5A5A5",
+          "#CACACA",
+          "#FFFFFF"
+        ]
+      }
+    },
+    "logo": {
+      "path": "assets/icthyoscan-mark.svg",
+      "status": "final",
+      "description": "Chrome-yellow square, four black round-capped scan brackets, curved milkfish in blue, sky, white and navy with warm-yellow fins.",
+      "markOnlyColors": {
+        "mark-blue": "#075BC3",
+        "mark-sky": "#83D4FF",
+        "mark-navy": "#08265B",
+        "fin-yellow": "#FFCE08",
+        "bracket-black": "#000000"
+      },
+      "rule": "Mark-only colours never appear in UI; the UI palette stays ink, yellow, green and tomato.",
+      "sizes": {
+        "phoneTopBar": "30px",
+        "phoneBrandLine": "34px",
+        "webBrand": "36px"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Board Lettering",
+        "purpose": "Board statements only: result, sync count, plan name. 40px phone board, 84px web strip, 104px web Login poster."
+      },
+      "tally": {
+        "displayName": "Tally",
+        "purpose": "The big count on a board, e.g. 1/5."
+      },
+      "headline": {
+        "displayName": "Page Title",
+        "purpose": "Page titles; 56px on web, 48px on web Login."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Top-bar titles and section headings; a 17px variant sets button labels."
+      },
+      "subtitle": {
+        "displayName": "Subtitle",
+        "purpose": "Row and note headings, sentence case."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All running text; 16px for lead copy."
+      },
+      "small": {
+        "displayName": "Small",
+        "purpose": "Metadata, captions, fine print."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Field labels, table headers, board-strip captions, tags (12px)."
+      }
+    },
+    "shadows": [
+      {
+        "name": "none",
+        "value": "none",
+        "purpose": "The system is flat. Inset 1.5-2px box-shadow strokes only draw rules (nav indicator, tiers, notes, avatar, thumbnails), never elevation."
+      },
+      {
+        "name": "board-rule",
+        "value": "outline: 2px solid currentColor; outline-offset: -7px",
+        "purpose": "The board's inset painted rule."
+      },
+      {
+        "name": "warn-band",
+        "value": "outline: 3px solid #C0381F; box-shadow: inset 0 10px 0 #C0381F",
+        "purpose": "Tomato rule and top band on the is-warn board."
+      },
+      {
+        "name": "focus-ring",
+        "value": "outline: 3px solid #1A1A17; outline-offset: 2px; box-shadow: 0 0 0 6px #F4C21B",
+        "purpose": "Shared focus-visible treatment."
+      },
+      {
+        "name": "field-focus",
+        "value": "box-shadow: 0 0 0 4px #F4C21B",
+        "purpose": "Text field focus halo."
+      }
+    ],
+    "motion": [
+      {
+        "name": "board-paint",
+        "value": "clip-path: inset(0 100% 0 0) to inset(0 0 0 0), 0.7s cubic-bezier(.16,1,.3,1)",
+        "purpose": "A08 result board paints on left to right. Only under prefers-reduced-motion: no-preference."
+      },
+      {
+        "name": "tally-rise",
+        "value": "translateY(12px) and opacity 0 to rest, 0.5s, 0.35s delay, cubic-bezier(.16,1,.3,1)",
+        "purpose": "A08 tally settles after the paint. Reduced-motion guarded."
+      },
+      {
+        "name": "press-feedback",
+        "value": "background .15s ease, color .15s ease, transform .1s ease",
+        "purpose": "Button hover and 1px press."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "phone-capture",
+        "value": "370px"
+      },
+      {
+        "name": "web-content-max",
+        "value": "1240px"
+      },
+      {
+        "name": "web-capture",
+        "value": "1440px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Result Board (warning)",
+      "kind": "custom",
+      "refersTo": "board-warn",
+      "description": "The signature painted slab; is-warn variant for 'visible signs observed' on A08, with tomato rule and top band.",
+      "html": "<div class=\"ds-board ds-warn\"><div class=\"ds-row\"><span class=\"ds-letter\">Visible signs observed</span><span class=\"ds-tally\">1<small>/5</small></span></div><p class=\"ds-sub\">Visible abnormalities observed. Further assessment is advised.</p></div>",
+      "css": ".ds-board{font-family:'Archivo',ui-sans-serif,system-ui,sans-serif;position:relative;background:#F4C21B;color:#1A1A17;border-radius:4px;padding:20px 20px 18px;outline:2px solid currentColor;outline-offset:-7px;display:flex;flex-direction:column;gap:10px;max-width:340px}.ds-warn{outline-color:#C0381F;outline-width:3px;box-shadow:inset 0 10px 0 #C0381F;padding-top:26px}.ds-row{display:flex;align-items:flex-end;justify-content:space-between;gap:12px}.ds-letter{font-weight:850;font-stretch:62%;text-transform:uppercase;font-size:40px;line-height:.92;letter-spacing:.005em}.ds-tally{font-weight:850;font-stretch:62%;font-size:58px;line-height:.8}.ds-tally small{font-size:22px;font-weight:800}.ds-sub{margin:0;font-size:15px;line-height:1.4;font-weight:500}"
+    },
+    {
+      "name": "Board Variants",
+      "kind": "card",
+      "refersTo": "board",
+      "description": "Default yellow, is-ok green, is-ink, is-alert tomato (rejected image) and is-blank dashed (pending/proposed).",
+      "html": "<div class=\"ds-bs\"><div class=\"ds-b\">Synced</div><div class=\"ds-b ds-ok\">Accepted</div><div class=\"ds-b ds-ink\">Account</div><div class=\"ds-b ds-alert\">Rejected</div><div class=\"ds-b ds-blank\">Pending</div></div>",
+      "css": ".ds-bs{display:flex;flex-wrap:wrap;gap:10px}.ds-b{font-family:'Archivo',ui-sans-serif,system-ui,sans-serif;background:#F4C21B;color:#1A1A17;border-radius:4px;padding:18px 20px;outline:2px solid currentColor;outline-offset:-7px;font-weight:850;font-stretch:62%;text-transform:uppercase;font-size:28px;line-height:.92;min-width:120px}.ds-ok{background:#1E6B34;color:#fff}.ds-ink{background:#1A1A17;color:#FBFBF8}.ds-alert{background:#C0381F;color:#fff}.ds-blank{background:#FBFBF8;color:#1A1A17;outline:2px dashed #55534B}"
+    },
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Ink slab with condensed uppercase lettering and a trailing icon; the main action on every screen.",
+      "html": "<button class=\"ds-btn\">Read care guidance <svg class=\"ds-ico\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15M13 6l6 6-6 6\"/></svg></button>",
+      "css": ".ds-ico{width:22px;height:22px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter}.ds-btn{font-family:'Archivo',ui-sans-serif,system-ui,sans-serif;display:flex;align-items:center;gap:10px;width:320px;min-height:52px;padding:0 18px;border-radius:4px;border:2px solid #1A1A17;background:#1A1A17;color:#FBFBF8;font-weight:800;font-stretch:75%;text-transform:uppercase;font-size:17px;letter-spacing:.04em;cursor:pointer;transition:background .15s ease,transform .1s ease}.ds-btn .ds-ico{margin-left:auto}.ds-btn:hover{background:#34342F}.ds-btn:active{transform:translateY(1px)}.ds-btn:focus-visible{outline:3px solid #1A1A17;outline-offset:2px;box-shadow:0 0 0 6px #F4C21B}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Transparent with ink border; the alternative action.",
+      "html": "<button class=\"ds-btn2\">Scan again</button>",
+      "css": ".ds-btn2{font-family:'Archivo',ui-sans-serif,system-ui,sans-serif;display:flex;align-items:center;justify-content:center;width:320px;min-height:52px;padding:0 18px;border-radius:4px;border:2px solid #1A1A17;background:transparent;color:#1A1A17;font-weight:800;font-stretch:75%;text-transform:uppercase;font-size:17px;letter-spacing:.04em;cursor:pointer;transition:background .15s ease,transform .1s ease}.ds-btn2:hover{background:#F1F0EA}.ds-btn2:active{transform:translateY(1px)}.ds-btn2:focus-visible{outline:3px solid #1A1A17;outline-offset:2px;box-shadow:0 0 0 6px #F4C21B}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "52px ink-bordered field with uppercase label, tomato caret and yellow focus halo.",
+      "html": "<label class=\"ds-field\"><span>Email address</span><input placeholder=\"farmer@example.com\"></label>",
+      "css": ".ds-field{font-family:'Archivo',ui-sans-serif,system-ui,sans-serif;display:flex;flex-direction:column;gap:6px;width:320px;color:#1A1A17}.ds-field span{font-weight:750;font-stretch:75%;text-transform:uppercase;font-size:13px;letter-spacing:.06em}.ds-field input{height:52px;border:2px solid #1A1A17;border-radius:4px;background:#fff;padding:0 14px;font:inherit;font-size:16px;color:#1A1A17;caret-color:#C0381F}.ds-field input::placeholder{color:#77756C}.ds-field input:focus{outline:none;box-shadow:0 0 0 4px #F4C21B}"
+    },
+    {
+      "name": "Ledger",
+      "kind": "custom",
+      "refersTo": "ledger-row",
+      "description": "Price-board rows: key, dotted leader, painted value.",
+      "html": "<div class=\"ds-ledger\"><div class=\"ds-lr\"><span>Signs observed</span><i></i><b>1</b></div><div class=\"ds-lr\"><span>Signs checked</span><i></i><b>5</b></div><div class=\"ds-lr\"><span>Sync state</span><i></i><b class=\"t\">Synchronized</b></div></div>",
+      "css": ".ds-ledger{font-family:'Archivo',ui-sans-serif,system-ui,sans-serif;width:320px;border-top:2px solid #1A1A17;color:#1A1A17}.ds-lr{display:flex;align-items:baseline;gap:8px;padding:11px 0;border-bottom:1px solid #D6D4CA;font-size:15px}.ds-lr i{flex:1;border-bottom:2px dotted #D6D4CA;transform:translateY(-4px);min-width:12px}.ds-lr b{font-weight:850;font-stretch:62%;font-size:34px;line-height:.85}.ds-lr b.t{font-size:15px;font-weight:700;font-stretch:100%;line-height:1.3}"
+    },
+    {
+      "name": "Sign Checklist",
+      "kind": "custom",
+      "refersTo": "list-row",
+      "description": "Ruled result rows; observed signs get a tomato box and an OBSERVED label, never colour alone.",
+      "html": "<div class=\"ds-signs\"><div class=\"ds-sign on\"><span class=\"box\"><svg class=\"ds-ico\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"m4.5 12.5 4.5 4.5 10.5-11\"/></svg></span>Red spots or hemorrhagic discoloration<em>Observed</em></div><div class=\"ds-sign\"><span class=\"box\"></span>Fin deterioration<em>Not recognized</em></div></div>",
+      "css": ".ds-ico{width:22px;height:22px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter}.ds-signs{font-family:'Archivo',ui-sans-serif,system-ui,sans-serif;width:340px;border-top:2px solid #1A1A17;color:#1A1A17}.ds-sign{display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid #D6D4CA;font-size:15px}.ds-sign .box{width:22px;height:22px;border-radius:3px;flex:none;display:grid;place-items:center;box-shadow:inset 0 0 0 2px #D6D4CA}.ds-sign .box .ds-ico{width:16px;height:16px}.ds-sign.on{font-weight:700}.ds-sign.on .box{background:#C0381F;box-shadow:none;color:#fff}.ds-sign em{margin-left:auto;font-style:normal;font-size:12px;font-weight:750;font-stretch:75%;text-transform:uppercase;letter-spacing:.06em;color:#55534B;white-space:nowrap}.ds-sign.on em{color:#C0381F}"
+    },
+    {
+      "name": "Segmented Control",
+      "kind": "chip",
+      "refersTo": "segmented-option",
+      "description": "Ink-ruled bar of equal cells; the selected cell fills chrome yellow.",
+      "html": "<div class=\"ds-seg\"><button aria-pressed=\"true\">Free Preview</button><button aria-pressed=\"false\">Pro Preview</button></div>",
+      "css": ".ds-seg{font-family:'Archivo',ui-sans-serif,system-ui,sans-serif;display:grid;grid-auto-flow:column;grid-auto-columns:1fr;width:300px;border:2px solid #1A1A17;border-radius:4px;overflow:hidden}.ds-seg button{border:0;border-left:2px solid #1A1A17;background:#FBFBF8;color:#1A1A17;font:inherit;font-weight:750;font-size:14px;min-height:42px;padding:0 12px;cursor:pointer}.ds-seg button:first-child{border-left:0}.ds-seg button[aria-pressed=\"true\"]{background:#F4C21B}.ds-seg button:hover:not([aria-pressed=\"true\"]){background:#F1F0EA}.ds-seg button:focus-visible{outline:3px solid #1A1A17;outline-offset:-3px}"
+    },
+    {
+      "name": "Status Tags",
+      "kind": "chip",
+      "refersTo": "plan-tag",
+      "description": "Colour plus mark shape plus word: synced round dot, pending ring, observed square.",
+      "html": "<div class=\"ds-tags\"><span class=\"ds-tag s\">Synchronized</span><span class=\"ds-tag p\">Pending sync</span><span class=\"ds-tag o\">Red spots</span></div>",
+      "css": ".ds-tags{font-family:'Archivo',ui-sans-serif,system-ui,sans-serif;display:flex;flex-wrap:wrap;gap:14px;align-items:center}.ds-tag{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:750;font-stretch:75%;text-transform:uppercase;letter-spacing:.06em;line-height:1}.ds-tag::before{content:\"\";width:9px;height:9px;border-radius:50%;background:currentColor}.ds-tag.s{color:#1E6B34}.ds-tag.p{color:#55534B}.ds-tag.p::before{background:transparent;box-shadow:inset 0 0 0 2px currentColor}.ds-tag.o{color:#C0381F}.ds-tag.o::before{border-radius:1px}.ds-demo{padding:4px 8px;border:1.5px dashed #55534B;border-radius:4px;font-size:11px;font-weight:750;font-stretch:75%;letter-spacing:.08em;text-transform:uppercase;color:#55534B}"
+    },
+    {
+      "name": "Bottom Navigation",
+      "kind": "nav",
+      "refersTo": "bottom-nav-indicator",
+      "description": "Four-tab bar under a 2px ink rule; the active tab's icon sits in a yellow pill stroked in ink.",
+      "html": "<nav class=\"ds-tabs\"><button><span class=\"pill\"><svg class=\"ds-ico\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M3 11 12 4l9 7\"/><path d=\"M5 10v10h5v-6h4v6h5V10\"/></svg></span>Home</button><button class=\"active\"><span class=\"pill\"><svg class=\"ds-ico\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M3 8V3h5M16 3h5v5M21 16v5h-5M8 21H3v-5\"/><path d=\"M7 12h10\"/></svg></span>Scan</button><button><span class=\"pill\"><svg class=\"ds-ico\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"8.5\"/><path d=\"M12 7v5l3.5 2\"/></svg></span>History</button><button><span class=\"pill\"><svg class=\"ds-ico\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"8\" r=\"4\"/><path d=\"M4 21c1-4.5 4.2-6.5 8-6.5s7 2 8 6.5\"/></svg></span>Profile</button></nav>",
+      "css": ".ds-ico{width:22px;height:22px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter}.ds-tabs{font-family:'Archivo',ui-sans-serif,system-ui,sans-serif;width:370px;display:grid;grid-template-columns:repeat(4,1fr);border-top:2px solid #1A1A17;background:#FBFBF8;padding:8px 4px 10px}.ds-tabs button{border:0;background:none;color:#55534B;font:inherit;font-size:12px;font-weight:700;display:flex;flex-direction:column;align-items:center;gap:4px;cursor:pointer;padding:0}.ds-tabs .pill{width:56px;height:30px;border-radius:15px;display:grid;place-items:center}.ds-tabs button.active{color:#1A1A17}.ds-tabs button.active .pill{background:#F4C21B;box-shadow:inset 0 0 0 1.5px #1A1A17}.ds-tabs button:hover:not(.active) .pill{background:#F1F0EA}.ds-tabs button:focus-visible{outline:3px solid #1A1A17;outline-offset:2px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Palengke Sign Board",
+    "overview": "**Creative North Star: \"The Palengke Sign Board\"**\n\nEvery screen is set like the hand-painted price boards above a Philippine fish stall. One painted slab of chrome-yellow enamel per screen states the single thing that matters (the result, the sync count, the plan name) in heavy, condensed, uppercase lettering that reads at arm's length in pond-side sun. Everything else sits on a painted-white ground in ink: ruled lists, dotted-leader ledgers, square-cornered buttons. The farmer's own fish photographs are the richest colour on any screen; the system stays at three values (ground, ink, one enamel per state) so the photo and the board carry the eye.\n\nDensity is moderate and phone-first: an 18px gutter, 52px touch targets, 15px body. Depth is never simulated. A board is a flat slab with an inset painted rule, a list is ink rules on white, and nothing floats. The world deliberately leaves behind the category default of pale-teal washes, rounded white cards with tinted icon tiles, and Inter-only typography.\n\n**Binding: light mode only.** There is no dark theme and none should be authored. The logo mark (`assets/icthyoscan-mark.svg`) is the **final mark**: a chrome-yellow square carrying four black, round-capped camera scan brackets around a curved milkfish drawn in blue, sky blue, white and navy with warm-yellow fins. The fish's colours (Mark Blue #075BC3, Mark Sky #83D4FF, Mark Navy #08265B, Fin Yellow #FFCE08) belong to the logo alone; they are not UI tokens and never appear outside the mark. The UI palette stays ink, yellow, green and tomato. Use the mark as supplied, at 30px in the phone top bar, 34px in the phone brand line and 36px in the web brand lockup.\n\n**Open item:** the fish illustration on the Starter (A01) and web Login (W01) poster panels (`assets/bangus-scan-hero.png`) is legacy art that does not belong to this world. It is pending replacement and sets no precedent for imagery.",
+    "keyCharacteristics": [
+      "One board per screen, carrying the screen's single most important statement.",
+      "Board lettering in Archivo at 850 weight, 62% width, uppercase.",
+      "Three values: painted-white ground, ink, and one enamel per meaning (yellow board, green kept, tomato observed/rejected).",
+      "2px ink rules as the primary structural device; 1px hairlines between rows.",
+      "Flat throughout: no drop shadows, no smooth gradients, no tinted icon tiles, no grey card panels.",
+      "Square-ish 4px corners on every slab, button, field and thumbnail.",
+      "One authored motion: the A08 result board paints on."
+    ],
+    "rules": [
+      {
+        "name": "The One Meaning per Enamel Rule",
+        "body": "Yellow is the board, green is kept/synced/guidance, tomato is \"visible signs observed\" or \"rejected\". Never use tomato for a generic error, emphasis or decoration, and never use green for a call to action.",
+        "section": "colors"
+      },
+      {
+        "name": "The Never Colour Alone Rule",
+        "body": "Every status carries a word and a shape as well as a colour: OBSERVED / NOT RECOGNIZED labels, a filled square dot for observed, a filled round dot for synced, a hollow ring for pending, a warning icon on the board strip.",
+        "section": "colors"
+      },
+      {
+        "name": "The Mark Keeps Its Own Colours Rule",
+        "body": "The logo's blue, sky, navy and fin-yellow appear only inside the mark. No UI element borrows them.",
+        "section": "colors"
+      },
+      {
+        "name": "The Photo Is the Richest Colour Rule",
+        "body": "No illustration, wash or gradient competes with the farmer's photograph for saturation.",
+        "section": "colors"
+      },
+      {
+        "name": "The Painted Letter Rule",
+        "body": "Anything set at 62% width is 850 weight and uppercase, and it lives on a board, a page title, a tally or a ledger value. Never set running text condensed.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Family Rule",
+        "body": "Archivo is the only typeface. Variation comes from the width and weight axes, not from a second family.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Board per Screen Rule",
+        "body": "Each screen has one board, placed high, stating its single most important thing. Supporting content follows below it as ruled lists, ledgers and notes.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat Paint Rule",
+        "body": "Nothing casts a shadow and nothing glows. If a surface needs separation, give it a rule.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** give each screen exactly one board, and put the screen's single most important statement on it in 850-weight, 62%-width uppercase lettering.",
+      "**Do** draw every board's inset 2px rule 7px inside its edge in the current text colour.",
+      "**Do** use tomato only for \"visible signs observed\" (is-warn board, checklist, Observed tag, flagged chart cap) and for rejected images (is-alert board).",
+      "**Do** use leaf green only for accepted, synchronized, kept and guidance states.",
+      "**Do** pair every status colour with a word and a mark shape (square dot, round dot, hollow ring, warning icon).",
+      "**Do** open lists, ledgers, tables and panels with a 2px ink rule and divide rows with 1px hairlines.",
+      "**Do** use a dashed outline to say \"pending or not yet available\" (is-blank board, the coming-soon Pro tier, the empty sample recommendation).",
+      "**Do** keep corners at 4px (3px for small parts) and touch targets at 44px or more (buttons 52px).",
+      "**Do** use the drawn line icon set (2px stroke, square caps, mitred joins) bare beside text.",
+      "**Do** guard any new motion with `prefers-reduced-motion`, and keep the A08 board paint-on as the only authored moment."
+    ],
+    "donts": [
+      "**Don't** author a dark mode; the product is light mode only.",
+      "**Don't** put icons in tinted square or circular tiles.",
+      "**Don't** use soft grey or pale-tinted card panels to group content; use rules and the board.",
+      "**Don't** use drop shadows, glows, or smooth decorative gradients. (Hard-stop gradients that draw rules, such as chart gridlines and the legend swatch, are rules, not gradients.)",
+      "**Don't** use tomato as a generic error, accent, or emphasis colour.",
+      "**Don't** set running text condensed or uppercase; condensed caps belong to lettering, titles, labels and numerals.",
+      "**Don't** introduce a second typeface.",
+      "**Don't** let any illustration or wash out-saturate the farmer's photograph.",
+      "**Don't** lift the logo's blue, sky, navy or fin-yellow colours into the UI; they live only inside the mark.",
+      "**Don't** treat the Starter/Login fish illustration as part of the visual language; it is legacy art pending replacement."
+    ]
+  }
+}
