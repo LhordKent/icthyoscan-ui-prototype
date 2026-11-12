@@ -174,7 +174,7 @@ Density is moderate and phone-first: an 18px gutter, 52px touch targets, 15px bo
 
 **Binding: light mode only.** There is no dark theme and none should be authored. The logo mark (`assets/icthyoscan-mark.svg`) is the **final mark**: a chrome-yellow square carrying four black, round-capped camera scan brackets around a curved milkfish drawn in blue, sky blue, white and navy with warm-yellow fins. The fish's colours (Mark Blue #075BC3, Mark Sky #83D4FF, Mark Navy #08265B, Fin Yellow #FFCE08) belong to the logo alone; they are not UI tokens and never appear outside the mark. The UI palette stays ink, yellow, green and tomato. Use the mark as supplied, at 30px in the phone top bar, 34px in the phone brand line and 36px in the web brand lockup.
 
-**Open item:** the fish illustration on the Starter (A01) and web Login (W01) poster panels (`assets/bangus-scan-hero.png`) is legacy art that does not belong to this world. It is pending replacement and sets no precedent for imagery.
+**Imagery:** the Starter (A01) and web Login (W01) boards carry a flat sign-painted Bangus (`assets/bangus-sign.svg`): an ink silhouette with yellow eye, gill, pectoral and dotted lateral-line details, drawn in the board's own two values. Scan photos are real tray photography: `bangus-demo-observation.png` for scans with observed signs and `bangus-clean.png` (spots retouched out) for scans with none.
 
 **Key Characteristics:**
 - One board per screen, carrying the screen's single most important statement.
@@ -314,6 +314,15 @@ A 2px ink-stroked block with a yellow header (30px display lettering) closed by 
 ### Viewfinder
 Full-bleed ink frame at 4:5 with the live image, four 5px chrome-yellow corner brackets, a small LIVE pill, and a yellow hint band along the bottom in 15px uppercase lettering.
 
+### Step Trail (owner)
+The owner's "Every step" record of a scan. A 2px ink top rule, then one hairline-divided row per step: time (13px/700), a 12px square marker, and the step name (14.5px/700) over its detail (13px faded ink). Marker states use shape as well as colour: ink square = done, tomato square with tomato detail text = a rejected image or observed signs, hollow ring = waiting for signal. Used on owner Home (latest steps), Scan details (A11, W04) and the web Farm overview.
+
+### Role Pick & Farmer Rows (owner)
+Registration offers two role options as a 2-column pair of 2px ink-bordered buttons (`aria-pressed`); the selected one fills chrome-yellow with the inset board rule. The owner's farmer list reuses ruled rows with a 40px initials avatar: name, pond · scans · last time, and a wrapping "Last step" tag. A farmer who has joined but not scanned gets a hollow avatar and a "No scans yet" pending tag. The farm code is a small yellow ink-ruled slug (`.b-code`, 850/75% width, 0.08em tracking).
+
+### Viewer Controls
+The "Account view", "Plan view" and "Image state" segmented switches (`.b-statectl`) are gallery viewer controls, not product UI; they are hidden in Screenshot mode, which reads `role`, `plan` and `quality` from the URL instead.
+
 ### Chart (web)
 Ink bars with 3px top corners on a field of 1px hairline gridlines every 55px, closed by a 2px ink baseline; flagged bars carry a 10px tomato cap. Bar counts sit above in 24px painted numerals.
 
@@ -344,4 +353,4 @@ One authored moment: on A08 Result, the result board paints on from left to righ
 - **Don't** introduce a second typeface.
 - **Don't** let any illustration or wash out-saturate the farmer's photograph.
 - **Don't** lift the logo's blue, sky, navy or fin-yellow colours into the UI; they live only inside the mark.
-- **Don't** treat the Starter/Login fish illustration as part of the visual language; it is legacy art pending replacement.
+- **Don't** put glossy or airbrushed fish renders on boards; boards take the flat sign-painted Bangus, and only scan photos are photographic.

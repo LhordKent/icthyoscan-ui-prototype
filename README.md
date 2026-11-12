@@ -21,7 +21,9 @@ This build is a **static navigable UI prototype gallery**, created because the s
 - `/prototype/subscription` and `/prototype/subscription/status` — plan interfaces
 - `/prototype/screenshots?screen=android/starter&frame=off` — clean screenshot mode; replace the screen value with `android/<screen-key>`, `web/<screen-key>`, or `subscription/<screen-key>`.
 
-Use the **Screenshot mode** control on any gallery screen for the correct clean capture URL. It hides the gallery UI completely. The mobile toolbar also lets you remove the phone frame before opening it.
+Use the **Screenshot mode** control on any gallery screen for the correct clean capture URL. Screens carry no demo/preview labels, so captures read as the real app.
+
+**Farmer and Owner accounts.** Registration (A03) lets the user pick Farmer or Fishpond owner. Owner is a second view of the existing screens (Home, History, Scan details, Profile and the web dashboard, history, details and profile): one owner, many farmers, with each farmer's every step. Switch with **Account view** on the Home screens, or add `&role=owner` to a screenshot URL. The Plan view (`&plan=pro`) and Image state (`&quality=rejected`) switches work the same way. All three switches are hidden in Screenshot mode. It hides the gallery UI completely. The mobile toolbar also lets you remove the phone frame before opening it.
 
 The gallery can also be opened by double-clicking `index.html`. Local files use `#/prototype/...` links so screen navigation works without a server. Screenshot view opens a separate tab containing only the selected screen; return to the original tab to select another. The overview now displays the actual screens side by side. Refresh an already open tab after updating these files.
 

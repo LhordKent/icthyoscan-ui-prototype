@@ -35,6 +35,7 @@ An offline-capable phone tool that screens Bangus specifically for visible abnor
 ## Capabilities and Constraints
 
 - **Binding: gallery structure is fixed.** Keep the gallery's layout and the way screens are arranged, framed and navigated: screen inventory, IDs (A01–A13, S01–S02, W01–W07), routes and screenshot mode stay the same. **Inside each screen, design freedom is wide open.**
+- **Two account types (user decision, 2026-11-11).** Farmer and Fishpond Owner are separate accounts, chosen at registration (A03). An owner has many farmers under them: farmers join with the owner's farm code. The owner follows every step each farmer takes (inspection sample, capture, image check accept/reject, result, care guidance, sync) and sees all farmers' scans. A farmer sees only their own scans. Owner is a second view of the existing screens (A04, A10, A11, A12, W02–W05), switched by an "Account view" viewer control, hidden in Screenshot mode and carried by `?role=owner`. No new screens were added.
 - **UI only.** Interactions stay demonstration controls, and no real functionality is required.
 - Stack is fixed: static HTML/CSS/vanilla JS (`index.html`, `styles.css`, `gallery.css`, `polish.css`, `app.js`, `aligned-ui.js`), with no build step. It deploys to Vercel as a static site (`vercel.json` rewrites routes), and `dist/` mirrors the root files.
 - UI copy is in English only.

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" role="img" aria-label="Bangus (milkfish)">
+  <!-- Flat sign-painted Bangus (milkfish): ink silhouette with painted-yellow details, drawn for the IcthyoScan sign-board world. -->
+  <g fill="#1A1A17">
+    <!-- dorsal, pelvic and anal fins (behind body) -->
+    <path d="M306 66 338 14c3-5 10-4 10 2l12 46z"/>
+    <path d="M318 134l20 38c2 4 8 3 9-1l3-40z"/>
+    <path d="M222 120l12 32c2 4 8 3 8-1l6-35z"/>
+    <!-- body: slender, deepest mid-body, pointed snout facing right -->
+    <path d="M586 100c-24-28-84-44-166-45-82-1-170 15-246 35l-34 2v16l34 2c76 20 164 36 246 35 82-1 142-17 166-45z"/>
+    <!-- deeply forked tail -->
+    <path d="M146 100 50 16c-6-5-15 1-11 8l44 76-44 76c-4 7 5 13 11 8z"/>
+  </g>
+  <g fill="none" stroke="#F4C21B" stroke-linecap="round">
+    <!-- gill cover -->
+    <path d="M500 66c15 15 17 52 0 70" stroke-width="5"/>
+    <!-- lateral line -->
+    <path d="M488 99H160" stroke-width="3" stroke-dasharray="1 11"/>
+    <!-- pectoral fin -->
+    <path d="M474 118c-24 4-48 13-64 25" stroke-width="5"/>
+    <!-- tail rays -->
+    <path d="M132 94 70 40M132 106 70 160" stroke-width="3"/>
+  </g>
+  <!-- eye -->
+  <circle cx="536" cy="90" r="11" fill="#F4C21B"/>
+  <circle cx="538" cy="90" r="5" fill="#1A1A17"/>
+</svg>
